@@ -1,0 +1,40 @@
+.btn-Hero {
+  height: 50px;
+  background-color: #387ed1;
+  width: 180px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 10px;
+  border-radius: 3px;
+  box-shadow: 2px;
+  margin-top: 2rem;
+}
+.btn-Hero:hover {
+  background-color: rgba(0, 0, 0, 0.825);
+}
+.stat {
+  justify-content: space-between;
+}
+
+.stats-p {
+  margin-top: 8px;
+  margin-bottom: 35px;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.693);
+  line-height: 1.9;
+}
+.arrow-a {
+  margin-left: 30px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.arrow-a:hover {
+  color: black;
+}
+@media only screen and (min-width: 1200px) {
+  .Container {
+    margin: 0 150px;
+  }
+}
