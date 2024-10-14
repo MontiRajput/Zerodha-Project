@@ -25,7 +25,7 @@ app.use(
 app.use(bodyParser.json());
 app.use(cookieParser());
 
-const PORT = process.env.PORT || 3002;
+const PORT = 3002;
 const url = process.env.MONGO_URL;
 
 // app.get("/addHoldings", async (req, res) => {
@@ -221,7 +221,6 @@ app.post("/newOrder", async (req, res) => {
   newOrder.save();
   res.send("Order Saved");
 });
-app.post("/", userVerification);
 
 app.get("/positions", async (req, res) => {
   let allPositions = await PositionModel.find({});
