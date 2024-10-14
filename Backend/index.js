@@ -12,8 +12,8 @@ const { PositionModel } = require("./Models/Position");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const allowedOrigins = [
-  "https://zerodha-ebon.vercel.app/",
-  "https://zerodha-project.vercel.app/",
+  "https://zerodha-ebon.vercel.app",
+  "https://zerodha-project.vercel.app",
 ];
 
 app.use(
