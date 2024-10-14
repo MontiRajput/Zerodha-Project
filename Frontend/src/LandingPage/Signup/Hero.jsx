@@ -48,7 +48,7 @@ function Signup() {
         handleSuccess(message);
         setTimeout(() => {
           // Redirect to your local external server
-          window.location.href = "http://localhost:1574/"; // Redirect to localhost:4000
+          window.location.href = "https://zerodha-ebon.vercel.app/"; // Redirect to localhost:4000
         }, 1000);
       } else {
         handleError(message);

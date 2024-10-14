@@ -12,8 +12,8 @@ const { PositionModel } = require("./Models/Position");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const allowedOrigins = [
-  "http://localhost:1574", // Your first frontend
-  "http://localhost:1573", // Another allowed origin
+  "https://zerodha-ebon.vercel.app/", // Your first frontend
+  "https://zerodha-project.vercel.app/", // Another allowed origin
 ];
 app.use(
   cors({
