@@ -118,7 +118,7 @@ const Login = () => {
               Continue
             </button>
             <span className="mx-4 fw-bold text-muted">
-              Don't have any Account? <Link to={"/Signup"}>Login</Link>
+              Don't have any Account? <Link to={"/Signup"}>Signup</Link>
             </span>
           </Box>
           <ToastContainer />
