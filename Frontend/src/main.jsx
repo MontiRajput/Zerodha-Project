@@ -12,21 +12,13 @@ import Navbar from "./LandingPage/Navbar.jsx";
 import Footer from "./LandingPage/Footer.jsx";
 import "react-toastify/dist/ReactToastify.css";
 import Login from "./LandingPage/Login.jsx";
-import ProtectedRoute from "./LandingPage/ProtectRoute.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route
-          path="/"
-          element={
-            <ProtectedRoute>
-              <Home />
-            </ProtectedRoute>
-          }
-        />
+        <Route path="/" element={<Home />} />
         <Route path="/support" element={<Support />} />
         <Route path="/about" element={<About />} />
         <Route path="/pricing" element={<Pricing />} />
