@@ -11,16 +11,12 @@ const { HoldingModel } = require("./Models/Holding");
 const { PositionModel } = require("./Models/Position");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
-const allowedOrigins = [
-  "https://zerodha-ebon.vercel.app",
-  "https://zerodha-project.vercel.app",
-];
 
 app.use(
   cors({
-    origin: allowedOrigins,
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Allow specific methods
-    allowedHeaders: ["Content-Type", "Authorization"], // Allow specific headers
+    origin: "",
+    methods: ["GET", "POST", "PUT"], // Allow specific methods
+    allowedHeaders: [""], // Allow specific headers
     credentials: true, // Allow cookies to be sent
   })
 );
