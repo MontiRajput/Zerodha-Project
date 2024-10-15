@@ -32,7 +32,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://zerodha-bac.vercel.app/login",
+        "https://zerodha-backend-frb9.onrender.com/login",
         {
           ...inputValue,
         },
