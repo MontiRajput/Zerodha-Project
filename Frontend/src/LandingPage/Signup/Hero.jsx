@@ -32,7 +32,7 @@ function Signup() {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://zerodha-bac.vercel.app/signup",
+        "https://zerodha-backend-frb9.onrender.com/signup",
         {
           ...inputValue,
         },
