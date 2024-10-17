@@ -60,13 +60,13 @@ const Login = () => {
   };
 
   return (
-    <div className="Container m-5 p-5">
+    <div className="Container m-md-5 p-5">
       <div className="row p-md-5">
-        <div className="col-md-6 ">
-          <img src="Media/img/signup.png" style={{ maxHeight: "90%" }} />
+        <div className="col col-md-6 ">
+          <img src="Media/img/signup.png" style={{ Widht: "90%" }} />
         </div>
-        <div className="col"></div>
-        <div className="col-md-5">
+
+        <div className="col-md-5 ml-md-2">
           <h2>Login now</h2>
           <p className="text-muted">Or track your existing application</p>
           <Box
@@ -95,7 +95,7 @@ const Login = () => {
                 />
               </div>
 
-              <div className="col-md-5">
+              <div className="col col-md-5">
                 <label htmlFor="password" className="text-muted fw-bold">
                   Password
                 </label>
