@@ -6,10 +6,12 @@ const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/holdings").then((res) => {
-      // console.log(res.data);
-      setAllHoldings(res.data);
-    });
+    axios
+      .get("https://zerodha-backend-frb9.onrender.com/holdings")
+      .then((res) => {
+        // console.log(res.data);
+        setAllHoldings(res.data);
+      });
   }, []);
   const labels = allHoldings.map((subArr) => subArr["name"]);
   const data = {
