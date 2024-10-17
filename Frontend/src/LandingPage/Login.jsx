@@ -63,7 +63,7 @@ const Login = () => {
     <div className="Container m-md-5 p-5">
       <div className="row p-md-5">
         <div className="col col-md-6 ">
-          <img src="Media/img/signup.png" style={{ Widht: "90%" }} />
+          <img src="Media/img/signup.png" style={{ width: "90%" }} />
         </div>
 
         <div className="col-md-5 ml-md-2">
