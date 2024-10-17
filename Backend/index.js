@@ -14,12 +14,17 @@ const cors = require("cors");
 
 app.use(
   cors({
-    origin: "",
-    methods: ["GET", "POST", "PUT"], // Allow specific methods
-    allowedHeaders: [""], // Allow specific headers
-    credentials: true, // Allow cookies to be sent
+    origin: [
+      "https://zerodha-project.vercel.app", // No trailing slash
+      "https://zerodha-ebon.vercel.app",
+    ],
+    methods: ["GET", "POST", "PUT"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true, // Make sure this is set if you're using cookies or tokens
   })
 );
+
+app.options("*", cors()); // Handle preflight requests
 
 app.use(bodyParser.json());
 app.use(cookieParser());
