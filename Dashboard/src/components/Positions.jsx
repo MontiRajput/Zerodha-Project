@@ -4,9 +4,11 @@ import axios from "axios";
 const Positions = () => {
   let [positions, setPositions] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:3002/positions").then((res) => {
-      setPositions(res.data);
-    });
+    axios
+      .get("https://zerodha-backend-frb9.onrender.com/positions")
+      .then((res) => {
+        setPositions(res.data);
+      });
   }, []);
   return (
     <>
